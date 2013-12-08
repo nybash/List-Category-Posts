@@ -382,7 +382,7 @@ class CatList{
         $lcp_more = __('Continue reading &rarr;', 'list-category-posts');
         $lcp_post_content = explode($matches[0], $lcp_content, 2);
         $lcp_content = $lcp_post_content[0] .
-          ' <a href="' . get_permalink($single->ID) . ' title="' . "$lcp_more" . '">' .
+          ' <a href="' . get_permalink($single->ID) . '" title="' . "$lcp_more" . '">' .
           $lcp_more . '</a>';
       endif;
 
